@@ -1,0 +1,23 @@
+body {
+    background-color: indianred;
+}
+
+section#left {
+    float: left;
+}
+
+img {
+    display: block;
+    margin: 5px;
+}
+article {
+    font-size: 50%;
+    display: inline;
+    float: left;
+    margin: 15px;
+    width: 500px;
+    height: 500px;
+}
+a {
+    margin: 5px;
+}
