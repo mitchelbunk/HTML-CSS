@@ -1,0 +1,35 @@
+body {
+    background-color: cornsilk;
+}
+
+section#left {
+    float: left;
+}
+
+img {
+    display: block;
+    margin: 5px;
+}
+article {
+    font-size: 50%;
+    display: inline;
+    float: left;
+    margin: 15px;
+    width: 500px;
+    height: 500px;
+}
+a {
+    margin: 5px;
+}
+
+form ul{
+    list-style-type: none;
+    padding: 0;
+}
+form ul li {
+    padding: 10px;
+}
+form ul li input {
+    position: absolute;
+    left: 150px;
+}
