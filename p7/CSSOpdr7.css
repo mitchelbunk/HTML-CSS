@@ -1,0 +1,282 @@
+/* telefoon stand */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: white;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+div#wrapper{
+    background-color: #ffffff;
+}
+header {
+    background-color: #828282;
+    padding-left: 15px;
+}
+
+h2#bierhier {
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 5px;
+    margin: 0;
+    font-size: xx-large;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    background-color: #828282;
+}
+
+li {
+
+    padding-left: 20px;
+    padding-bottom: 5px;
+    border-top: 1px solid white;
+}
+
+li a{
+    text-decoration: none;
+    color: #073763;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin: 15px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: x-large;
+}
+
+h2  {
+    color: #073763;
+    font-weight: 600;
+    font-size: xx-large;
+    margin: 5px;
+}
+h3  {
+    color: #073763;
+    font-weight: 600;
+    font-size: x-large;
+}
+
+a:hover{
+    color: #999999;
+}
+a:active{
+    color: rgb(225, 128, 0);
+}
+
+li:hover {
+    background-color: #828282;
+    transition: 2s;
+}
+ul:hover {
+    background-color: #828282;
+    transition: 2s;
+}
+
+img {
+    width: 100%;
+}
+
+section footer{
+    padding: 20px;
+}
+
+footer {
+    background-color: #999999;
+    color: white;
+    clear: both;
+    padding: 10px;
+}
+footer p{
+    color: white;
+    text-align: center;
+}
+
+input {
+    float: right;
+    width: 60%;
+}
+label {
+    width: 100%;
+}
+/* tablet stand */
+@media all and (min-width: 550px) {
+    h2#bierhier {
+        font-size: xx-large;
+    }
+    li {
+        display: inline-block;
+        border: none;
+    }
+    section#stage{
+        width: 40%;
+        float: right;
+        word-spacing: 15px;
+    }
+    section#nieuws{
+        width: 60%;
+        float: left;
+        padding-left: 10px;
+        word-spacing: 15px;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+    input {
+        width: 160px;
+        float: right;
+    }
+    label {
+        width: 100%;
+    }
+}
+/* pc stand */
+@media all and (min-width: 800px) {
+    h2#bierhier {
+        font-size: xx-large;
+    }
+    section#stage{
+        width: 30%;
+        float: right;
+        word-spacing: 15px;
+    }
+    section#nieuws{
+        width: 70%;
+        float: left;
+        padding-left: 10px;
+        word-spacing: 15px;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+
+    article {
+        display: inline-block;
+        width: 47%;
+        margin-right: 10px;
+        word-spacing: 15px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    article:nth-child(even){
+        margin-right: 0;
+    }
+
+    input {
+        float: right;
+        width:70%;
+    }
+    label {
+        width: 90%;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    div#wrapper{
+        width: 1200px;
+        margin: auto;
+    }
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+    background-color: #cc3333;
+    color: #000000;
+    padding: 15px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #68e533;
+    color: #000000;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+    background-color: #36cc00;
+}
+
+.aside {
+    background-color: #68e533;
+    padding: 15px;
+    color: #000000;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+    background-color: #47cc00;
+    color: #000000;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
