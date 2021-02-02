@@ -1,10 +1,38 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Vul met JS</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
 </head>
+<style>
+    #wrapper {
+        margin:auto;
+        width:70%;
+    }
+    body {
+        font-family: 'Noto Serif', serif;
+    }
+
+</style>
 <body>
+<div id="wrapper">
+    <h1 id="paginatitel"></h1>
+    <h3 id="subkop"></h3>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
+    <img height="358" id="aap1"  width="637"  alt="Arcstrider"   >
+    <img height="605" id="aap2"  width="1069" alt="Nightstalker">
+
+</div>
+
+<script>
+    document.getElementById("paginatitel").innerText = "Dit is de paginatitel";
+    document.getElementById("subkop").innerText = "Dit is de subkop";
+    document.getElementById("aap2").src = "images/Nightstalker.jpg";
+
+    document.getElementById("aap1").src = "images/Arcstrider.jpg";
+
+
+</script>
 
 </body>
 </html>
