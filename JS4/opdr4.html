@@ -2,9 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Plaatjes shuffle</title>
+
+    <style>
+        html {
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+        }
+        body {
+            text-align: center;
+        }
+        img {
+            height: 300px;
+            width: 300px;
+            border: 0px;
+        }
+        #pics{
+            width: 900px;
+            height: 900px;
+            border: solid 1px black;
+            font-size: 0px;
+            margin: auto;
+        }
+    </style>
+
 </head>
 <body>
+<div id="pics">
+    <img src="Images/Guardian1.jpg" alt="Arcstrider">
+    <img src="Images/Guardian2.jpg" alt="Behemoth">
+    <img src="Images/Guardian3.jpg" alt="Dawnblade">
+    <img src="Images/Guardian4.jpg" alt="Gunslinger">
+    <img src="Images/Guardian5.jpg" alt="Nightstalker">
+    <img src="Images/Guardian6.jpg" alt="Revenant">
+    <img src="Images/Guardian7.jpg" alt="Shadebinder">
+    <img src="Images/Guardian8.jpg" alt="Stormcaller">
+    <img src="Images/Guardian9.jpg" alt="Voidwalker">
+</div>
+<script>
+    var plaatjes = document.getElementsByTagName("img");
+    var random = 0;
 
+    var randomNumbers = [];
+
+    while (randomNumbers.length < 9) {
+        random = Math.floor (Math.random() * 9 )+ 1;
+        if (randomNumbers.lastIndexOf(random) == -1) {
+        randomNumbers.push(random);
+        }
+    }
+
+    random = 0
+    for (var plaatje in plaatjes) {
+         console.log(plaatjes[plaatje].src = "Images/Guardian" + randomNumbers[random] + ".jpg");
+         random++;
+    }
+/*
+    for (var i = 0; i < plaatjes.length; i++) {
+        random = Math.floor (Math.random() * 9 )+ 1;
+        plaatjes[i].src = "Images/Guardian" + random +".jpg";
+    }
+
+*/
+</script>
 </body>
 </html>
