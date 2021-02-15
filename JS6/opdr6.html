@@ -4,25 +4,106 @@
             <meta charset="UTF-8">
                 <title>Imageslider</title>
             <style>
-                #slideholder {
-                    height: 800px;
-                    width: 900px;
+                #slideholder1 {
+                    height: 300px;
+                    width: 300px;
+                    border: 3px black solid;
+                }
+
+                #slideholder2 {
+                    height: 300px;
+                    width: 300px;
+                    border: 3px black solid;
+                }
+
+                #slideholder3 {
+                    height: 300px;
+                    width: 300px;
                     border: 3px black solid;
                 }
             </style>
         </head>
         <body>
-            <div id="slideholder"></div>
+            <div id="slideholder1"></div>
             <script>
                 var plaatjes = [1,2,3,4,5,6,7,8,9];
-                var slideholder = document.getElementById("slideholder");
-                slideholder.style.backgroundImage = "url('Images/Guardian2.jpg')";
+                var teller = 0;
+                var slideholder = document.getElementById("slideholder1");
+                slideholder.style.backgroundImage = "url('Images/Guardian9.jpg')";
 
                 slideholder.addEventListener("click", function () {
-                    slideholder.style.backgroundImage = "url('Images/Guardian8.jpg')";
+
+                    slideholder.style.backgroundImage = "url('Images/Guardian"+ getGuardian() +".jpg')";
+
 
                 });
+
+                function getGuardian () {
+                    if (teller >= plaatjes.length) {
+                        teller = 1;
+                    }else {
+                        teller++;
+                    }
+                    console.log(teller);
+                    return teller;
+                }
+
             </script>
+
+                <div id="slideholder2"></div>
+            <script>
+
+                var plaatjes1 = [1,2,3,4,5,6,7,8,9];
+                var teller1 = 0;
+                var slideholder1 = document.getElementById("slideholder2");
+                slideholder1.style.backgroundImage = "url('Images/Guardian9.jpg')";
+
+                slideholder1.addEventListener("click", function () {
+
+                    slideholder1.style.backgroundImage = "url('Images/Guardian"+ getGuardian1() +".jpg')";
+
+
+                });
+
+                function getGuardian1 () {
+                    if (teller1 >= plaatjes1.length) {
+                        teller1 = 1;
+                    }else {
+                        teller1++;
+                    }
+                    console.log(teller1);
+                    return teller1;
+                }
+
+            </script>
+
+            <div id="slideholder3"></div>
+            <script>
+
+                var plaatjes2 = [1,2,3,4,5,6,7,8,9];
+                var teller2 = 0;
+                var slideholder2 = document.getElementById("slideholder3");
+                slideholder2.style.backgroundImage = "url('Images/Guardian9.jpg')";
+
+                slideholder2.addEventListener("click", function () {
+
+                    slideholder2.style.backgroundImage = "url('Images/Guardian"+ getGuardian2() +".jpg')";
+
+
+                });
+
+                function getGuardian2 () {
+                    if (teller2 >= plaatjes2.length) {
+                        teller2 = 1;
+                    }else {
+                        teller2++;
+                    }
+                    console.log(teller2);
+                    return teller2;
+                }
+
+            </script>
+
             <h3> <a href="../index.html"> opdr6</a> </h3>
 
         </body>
