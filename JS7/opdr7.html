@@ -2,93 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Javascript interactive</title>
-    <!--<link href="opdr7.css" rel="stylesheet">-->
+        <title>Javascript interactive</title>
+    <link href="opdr7.css" rel="stylesheet">
 
-    <style>
-        body {
-            font-family: 'Copse', serif;
-            text-align: center;
-        }
-        div.picture-holder {
-            box-sizing: border-box;
-            height: 450px;
-            width: 300px;
-            float: left;
-            border: solid 1px black;
-        }
-        div.favoriet {
-            width: 300px;
-            height: 150px;
-            background-image: none;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        #pics {
-            width: 900px;
-            height: 1350px;
-            border: solid 1px black;
-            font-size: 0px;
-            margin: auto;
-        }
-
-
-    </style>
 </head>
 <body>
     <h1>choose a picture</h1>
-    <h3><a href="../index.html">click here to go back</a></h3>
+
+        <h3><a href="../index.html">click here to go back</a></h3>
 
     <div id="pics">
 
     </div>
 
-<script>
-    pics = document.getElementById("pics");
-    createPicsHolders();
-    createGuardianImages();
-
-    function createPicsHolders() {
-        for (var i = 0; i < 12; i++) {
-            pictureHolder = document.createElement("div");
-            pictureHolder.className = "picture-holder";
-            pictureHolder.id = "picture-holder-" + i;
-            pics.appendChild(pictureHolder);
-        }
-    }
-    function createGuardianImages() {
-        pictureHolders = document.getElementsByClassName("picture-holder");
-        for (var i = 0; i < pictureHolders.length; i++) {
-            favoriet = document.createElement("div");
-            favoriet.className = "favoriet";
-            favoriet.id = "favoriet" + (i + 1);
-            guardianPlaatje = document.createElement("img");
-            guardianPlaatje.src = "Images3/Guardian" + (i+1) + ".png";
-            guardianPlaatje.id = (i+1);
-            pictureHolders[i].addEventListener("click", function () {
-                maakFavoriet(this.childNodes[1].id);
-            });
-            pictureHolders[i].appendChild(favoriet);
-            pictureHolders[i].appendChild(guardianPlaatje);
-        }
-    }
-    function maakFavoriet (id) {
-        console.log("maak mij favoriet! het gaat om Guardian...." + id );
-        notsofavoriet = document.getElementsByClassName("favoriet");
-
-        for (var i = 0; i < notsofavoriet.length; i++) {
-            notsofavoriet[i].style.backgroundImage = "none";
-        }
-        
-        favoriet = document.getElementById("favoriet" + id);
-        favoriet.style.backgroundImage = "url('Images3/hart.png')";
-    }
-
-
-    //  nieuwElement = document.createElement("div");
-  //  nieuwElement.className = "guardianpicture";
-  //  pics.appendChild(nieuwElement);
-
-</script>
+<script src="opdr7.js"> </script>
 </body>
 </html>
