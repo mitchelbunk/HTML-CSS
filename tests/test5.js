@@ -2,14 +2,12 @@ let getalEen = "";
 let getalTwee = "";
 let berekeningsWaarde = "";
 let resultaat = 0 ;
-
 function Tel1(){
     getalEen += "1";
     document.getElementById("huidiggetal").innerText = getalEen;
 }
-
 function Tel2(){
-    if (berekeningsWaarde === ""){
+    if (berekeningsWaarde == ""){
         getalEen += "2";
         document.getElementById("huidiggetal").innerText = getalEen
     }else {
@@ -17,9 +15,8 @@ function Tel2(){
         document.getElementById("huidiggetal").innerText = getalTwee;
     }
 }
-
 function Tel3(){
-    if (berekeningsWaarde === ""){
+    if (berekeningsWaarde == ""){
         getalEen += "3";
         document.getElementById("huidiggetal").innerText = getalEen
     }else {
@@ -27,9 +24,8 @@ function Tel3(){
         document.getElementById("huidiggetal").innerText = getalTwee;
     }
 }
-
 function Tel4(){
-    if (berekeningsWaarde === ""){
+    if (berekeningsWaarde == ""){
         getalEen += "4";
         document.getElementById("huidiggetal").innerText = getalEen
     }else {
@@ -37,9 +33,8 @@ function Tel4(){
         document.getElementById("huidiggetal").innerText = getalTwee;
     }
 }
-
 function Tel5(){
-    if (berekeningsWaarde === ""){
+    if (berekeningsWaarde == ""){
         getalEen += "5";
         document.getElementById("huidiggetal").innerText = getalEen
     }else {
@@ -47,9 +42,8 @@ function Tel5(){
         document.getElementById("huidiggetal").innerText = getalTwee;
     }
 }
-
 function Tel6(){
-    if (berekeningsWaarde === ""){
+    if (berekeningsWaarde == ""){
         getalEen += "6";
         document.getElementById("huidiggetal").innerText = getalEen
     }else {
@@ -57,9 +51,8 @@ function Tel6(){
         document.getElementById("huidiggetal").innerText = getalTwee;
     }
 }
-
 function Tel7(){
-    if (berekeningsWaarde === ""){
+    if (berekeningsWaarde == ""){
         getalEen += "7";
         document.getElementById("huidiggetal").innerText = getalEen;
     }else {
@@ -67,9 +60,8 @@ function Tel7(){
         document.getElementById("huidiggetal").innerText = getalTwee;
     }
 }
-
 function Tel8(){
-    if (berekeningsWaarde === ""){
+    if (berekeningsWaarde == ""){
         getalEen += "8";
         document.getElementById("huidiggetal").innerText = getalEen;
     }else {
@@ -77,9 +69,8 @@ function Tel8(){
         document.getElementById("huidiggetal").innerText = getalTwee;
     }
 }
-
 function Tel9(){
-    if (berekeningsWaarde === ""){
+    if (berekeningsWaarde == ""){
         getalEen += "9";
         document.getElementById("huidiggetal").innerText = getalEen
     }else {
@@ -87,9 +78,8 @@ function Tel9(){
         document.getElementById("huidiggetal").innerText = getalTwee;
     }
 }
-
 function Tel0(){
-    if (berekeningsWaarde === ""){
+    if (berekeningsWaarde == ""){
         getalEen += "0";
         document.getElementById("huidiggetal").innerText = getalEen
     }else {
@@ -97,25 +87,18 @@ function Tel0(){
         document.getElementById("huidiggetal").innerText = getalTwee;
     }
 }
-
-
-
 function TelPlus () {
     berekeningsWaarde = "+";
 }
-
 function TelMin () {
     berekeningsWaarde = "-";
 }
-
 function TelDeel () {
     berekeningsWaarde = "/";
 }
-
 function TelKeer () {
     berekeningsWaarde = "*";
 }
-
 function TelIs () {
     if (berekeningsWaarde == "+") {
         resultaat = parseInt(getalEen) + parseInt(getalTwee);
@@ -145,7 +128,4 @@ function TelIs () {
         getalEen = "";
         getalTwee = "";
     }
-
-
-
 }
