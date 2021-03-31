@@ -24,85 +24,22 @@
             </style>
         </head>
         <body>
-            <div id="slideholder1"></div>
-            <script>
-                var plaatjes = [1,2,3,4,5,6,7,8,9,10,11,12];
-                var teller = 0;
-                var slideholder = document.getElementById("slideholder1");
-                slideholder.style.backgroundImage = "url('Images2/Guardian12.png')";
 
-                slideholder.addEventListener("click", function () {
+            <div id="slideholder1">
+            <script src="opdr61.js"></script>
+            </div>
 
-                    slideholder.style.backgroundImage = "url('Images2/Guardian"+ getGuardian() +".png')";
+                <div id="slideholder2">
+            <script src="opdr62.js"></script>
+                </div>
 
 
-                });
 
-                function getGuardian () {
-                    if (teller >= plaatjes.length) {
-                        teller = 1;
-                    }else {
-                        teller++;
-                    }
-                    console.log(teller);
-                    return teller;
-                }
-
-            </script>
-
-                <div id="slideholder2"></div>
-            <script>
-
-                var plaatjes1 = [1,2,3,4,5,6,7,8,9,10,11,12];
-                var teller1 = 0;
-                var slideholder1 = document.getElementById("slideholder2");
-                slideholder1.style.backgroundImage = "url('Images2/Guardian12.png')";
-
-                slideholder1.addEventListener("click", function () {
-
-                    slideholder1.style.backgroundImage = "url('Images2/Guardian"+ getGuardian1() +".png')";
+            <div id="slideholder3">
+            <script src="opdr63.js"></script>
+            </div>
 
 
-                });
-
-                function getGuardian1 () {
-                    if (teller1 >= plaatjes1.length) {
-                        teller1 = 1;
-                    }else {
-                        teller1++;
-                    }
-                    console.log(teller1);
-                    return teller1;
-                }
-
-            </script>
-
-            <div id="slideholder3"></div>
-            <script>
-
-                var plaatjes2 = [1,2,3,4,5,6,7,8,9,10,11,12];
-                var teller2 = 0;
-                var slideholder2 = document.getElementById("slideholder3");
-                slideholder2.style.backgroundImage = "url('Images2/Guardian12.png')";
-
-                slideholder2.addEventListener("click", function () {
-
-                    slideholder2.style.backgroundImage = "url('Images2/Guardian"+ getGuardian2() +".png')";
-
-
-                });
-
-                function getGuardian2 () {
-                    if (teller2 >= plaatjes2.length) {
-                        teller2 = 1;
-                    }else {
-                        teller2++;
-                    }
-                    console.log(teller2);
-                    return teller2;
-                }
-
-            </script>
 
             <h3> <a href="../index.html"> opdr6</a> </h3>
 
