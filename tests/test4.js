@@ -14,3 +14,4 @@ function Min(){
     console.log(teller);
 
 }
+

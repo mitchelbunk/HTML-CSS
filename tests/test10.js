@@ -5,3 +5,11 @@ let pictures = [
 ];
 
 let buttons = document.getElementById('.btn')
+
+
+addEventListener("click")
+
+function nextImage () {
+
+}
+

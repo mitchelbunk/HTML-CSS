@@ -1,7 +1,7 @@
-var plaatjes = document.getElementsByTagName("img");
-var random = 0;
+let plaatjes = document.getElementsByTagName("img");
+let random = 0;
 
-var randomNumbers = [];
+let randomNumbers = [];
 
 while (randomNumbers.length < 9) {
     random = Math.floor (Math.random() * 9 )+ 1;
@@ -16,6 +16,6 @@ for (var plaatje in plaatjes) {
     random++;
 }
 
-//for (var i = 0; i <; i++) {
+
 
 
